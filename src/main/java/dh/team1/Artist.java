@@ -1,6 +1,7 @@
 package dh.team1;
 
 import javax.xml.crypto.Data;
+import java.util.List;
 
 public class Artist {
 
@@ -10,7 +11,8 @@ public class Artist {
     private String bio;
     private String genre;
 
-    public Account(int id, String name,Data birthData, String bio, String genre){
+
+    public Artist (int id, String name,Data birthData, String bio, String genre){
         this.setId(id);
         this.setName(name);
         this.setBirthData(birthData);
