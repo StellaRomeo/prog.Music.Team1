@@ -13,7 +13,7 @@ public class User {
     private Data birthData;
     private String gender;
 
-    public User (String name, String surname, String email, String address, String city, String country,Data birthData,String gender){
+    public User (){
         this.name = name;
         this.surname = surname;
         this.email = email;
