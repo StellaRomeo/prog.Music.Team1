@@ -9,15 +9,17 @@ public class Artist {
     private String name;
     private Data birthData;
     private String bio;
+    private String nationality;
     private String genre;
 
 
-    public Artist (int id, String name,Data birthData, String bio, String genre){
-        this.setId(id);
-        this.setName(name);
-        this.setBirthData(birthData);
-        this.setBio(bio);
-        this.setGenre(genre);
+    public Artist (int id, String name,Data birthData, String bio,String nationality, String genre){
+        this.id = id;
+        this.name = name;
+        this.birthData = birthData;
+        this.bio = bio;
+        this.nationality = nationality;
+        this.genre = genre;
     }
 
 

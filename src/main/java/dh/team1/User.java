@@ -14,14 +14,14 @@ public class User {
     private String gender;
 
     public User (String name, String surname, String email, String address, String city, String country,Data birthData,String gender){
-        this.setName(name);
-        this.setSurname(surname);
-        this.setEmail(email);
-        this.setAddress(address);
-        this.setCity(city);
-        this.setCountry(country);
-        this.setBirthData(birthData);
-        this.setGender(gender);
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.address = address;
+        this.city = city;
+        this.country = country;
+        this.birthData = birthData;
+        this.gender = gender;
     }
 
 
