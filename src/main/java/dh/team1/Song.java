@@ -1,14 +1,19 @@
 package dh.team1;
 
+import javax.xml.crypto.Data;
+
 public class Song {
     private String title;
     private String artist;
     private float time;
+    private Data dataProduction;
 
-    public Song(String title, String artist,float time){
+    public Song(String title, String artist,float time, Data dataProduction){
         this.title = title;
         this.artist = artist;
         this.time = time;
+        this.dataProduction = dataProduction;
+
     }
 
     public void play(){
