@@ -15,4 +15,8 @@ public class Song {
         System.out.println("Play song"+ " "+ title + " " + "di"+ artist);
     }
 
+    public  void addSong(Song song){
+        song.addSong(song); //agg. alla playlist
+    }
+
 }
