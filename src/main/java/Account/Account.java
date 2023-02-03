@@ -9,9 +9,9 @@ import java.util.UUID;
 public abstract class Account {
 
     private String id;
-    private String username;
-    private String password;
-    private String email;
+    protected String username;
+    protected String password;
+    protected String email;
     private List<Playlist>playlists;
 
     public Account(String username, String password, String email){
