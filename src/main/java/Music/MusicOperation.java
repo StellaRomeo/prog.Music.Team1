@@ -6,6 +6,7 @@ public interface MusicOperation {
     public void stop();
     public void skip();
     public void pause();
+    public void repeat();
 
 
 
