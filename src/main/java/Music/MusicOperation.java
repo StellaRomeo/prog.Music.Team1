@@ -12,6 +12,7 @@ public interface MusicOperation {
     public void removeToPlaylist();
     public  void createPlaylist();
     public void like();
+    public void search();
 
 
 
