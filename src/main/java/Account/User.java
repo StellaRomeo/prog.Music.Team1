@@ -1,4 +1,6 @@
-package dh.team1;
+package Account;
+
+import Music.Playlist;
 
 import javax.xml.crypto.Data;
 import java.util.List;
@@ -15,11 +17,8 @@ public class User extends Account {
     private String city;
     private String country;
 
-
-
-    public User(int id, String username, String password, String email, String name,String surname, Data dataBorn,String gender,
-                String nationality, String address, String city, String country) {
-        super(id, username, password, email);
+    public User(String username, String password, String email) {
+        super(username, password, email);
         this.setName(name);
         this.setSurname(surname);
         this.setDataBorn(dataBorn);
@@ -29,6 +28,7 @@ public class User extends Account {
         this.setCity(city);
         this.setCountry(country);
     }
+
 
     public String getName() {
         return name;

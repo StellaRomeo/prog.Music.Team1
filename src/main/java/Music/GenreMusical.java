@@ -1,4 +1,6 @@
-package dh.team1;
+package Music;
+
+import Music.Song;
 
 import java.util.ArrayList;
 import java.util.List;

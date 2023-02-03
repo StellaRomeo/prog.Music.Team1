@@ -1,5 +1,8 @@
-package dh.team1;
+package Music;
 
+
+import Account.Artist;
+import Account.User;
 
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
