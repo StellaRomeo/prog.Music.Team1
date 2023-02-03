@@ -1,16 +1,13 @@
 package dh.team1;
 
-public class Admin extends User{
+public class Admin extends Account{
 
-    private  int id;
-    private  String username;
-    private  String password;
+    private User user;
 
 
-    public Admin(int id, String username, String password) {
-        super();
-        this.id = id;
-        this.username = username;
-        this.password = password;
+    public Admin(int id, String username, String password, String email, User user) {
+        super(id, username, password, email);
+        this.user = user;
+
     }
 }
