@@ -43,6 +43,13 @@ public abstract class Account {
         return playlists;
     }
 
+    public void addPlaylist(Playlist playlist){
+        playlists.add(playlist);
+    }
+    public  void removePlaylist(Playlist playlist){
+        playlists.remove(playlist);
+    }
+
 
 
 }
