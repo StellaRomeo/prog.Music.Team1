@@ -9,6 +9,7 @@ public interface MusicOperation {
     public void repeat();
     public void shuffle();
     public void addToPlaylist();
+    public void removeToPlaylist();
 
 
 
