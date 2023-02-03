@@ -8,6 +8,7 @@ public interface MusicOperation {
     public void pause();
     public void repeat();
     public void shuffle();
+    public void addToPlaylist();
 
 
 
