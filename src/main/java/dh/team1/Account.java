@@ -2,6 +2,7 @@ package dh.team1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public abstract class Account {
 
@@ -11,16 +12,16 @@ public abstract class Account {
     private String email;
     private List<Playlist>playlists;
 
-    public Account(int id, String username, String password, String email){
-        this.id = id;
+    public Account(int generateId, String username, String password, String email){
+        this.id = generateId;
         this.setUsername(username);
         this.setPassword(password);
         this.setEmail(email);
         this.playlists = new ArrayList<>();
     }
 
-    public int getId() {   // univoco quindi no set - chiedere
-        return id;
+    public String generateId(){
+        return UUID.randomUUID().toString();  //identificatore univoco a livello globale
     }
 
     public String getUsername() {
