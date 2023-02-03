@@ -19,7 +19,7 @@ public abstract class Account {
         this.playlists = new ArrayList<>();
     }
 
-    public int getId() {
+    public int getId() {   // univoco quindi no set - chiedere
         return id;
     }
 
