@@ -8,9 +8,8 @@ public interface MusicOperation {
     public void pause();
     public void repeat();
     public void shuffle();
-    public void addToPlaylist();
-    public void removeToPlaylist();
-    public  void createPlaylist();
+    public void add();
+    public void remove();
     public void like();
     public void dislike();
     public void search();
