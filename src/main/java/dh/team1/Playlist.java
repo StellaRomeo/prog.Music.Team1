@@ -1,24 +1,19 @@
 package dh.team1;
 
+
 import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlist {
+public class Playlist extends MusicDetails {
 
-    private String title;
-    private Data dataCreation; // data creazione
-    private String genre; // genere musicale della playlist
-    private User user; // utente che crea la playlist
-    private List<Song>songList; // lista canzoni
+    private User user;
+    private List<Song>songList;
 
-    public Playlist(String title, String genre, Data dataCreation, User user){
-        this.title = title;
-        this.genre = genre;
-        this.dataCreation = dataCreation;
+
+    public Playlist(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment, User user) {
+        super(title, artist, genreMusical, duration, dataCreation, assessment);
         this.user = user;
         this.songList = new ArrayList<>();
     }
-
-
 }
