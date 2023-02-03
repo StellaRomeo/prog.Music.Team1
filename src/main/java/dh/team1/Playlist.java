@@ -5,7 +5,7 @@ import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlist extends MusicDetails {
+public class Playlist extends MusicDetail {
 
     private User user;
     private List<Song>songList;

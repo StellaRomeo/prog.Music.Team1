@@ -3,6 +3,7 @@ package dh.team1;
 import javax.xml.crypto.Data;
 import java.util.List;
 
+
 public class User extends Account {
 
     private String name;
@@ -93,7 +94,9 @@ public class User extends Account {
         this.country = country;
     }
 
-
-
+    @Override
+    public List<Playlist> getPlaylists() {
+        return super.getPlaylists();
+    }
 
 }

@@ -2,7 +2,7 @@ package dh.team1;
 
 import javax.xml.crypto.Data;
 
-public abstract class MusicDetails {    //song-playlist-album
+public abstract class MusicDetail {    //song-playlist-album
 
     private String title;
     private Artist artist;
@@ -12,7 +12,7 @@ public abstract class MusicDetails {    //song-playlist-album
     private int assessment; // valutazione 1-5
 
 
-    public MusicDetails(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment) {
+    public MusicDetail(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment) {
         this.title = title;
         this.artist = artist;
         this.genreMusical = genreMusical;

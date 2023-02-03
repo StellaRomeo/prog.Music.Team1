@@ -6,23 +6,24 @@ import java.util.UUID;
 
 public abstract class Account {
 
-    private int id;
+    private String id;
     private String username;
     private String password;
     private String email;
     private List<Playlist>playlists;
 
-    public Account(int generateId, String username, String password, String email){
-        this.id = generateId;
+    public Account(String username, String password, String email){
         this.username = username;
         this.password = password;
         this.email = email;
+        this.id = UUID.randomUUID().toString();
         this.playlists = new ArrayList<>();
     }
 
-    public String generateId(){
-        return UUID.randomUUID().toString();  //identificatore univoco a livello globale
+    public String getId() {
+        return id;
     }
+
 
     public String getUsername() {
         return username;
