@@ -6,14 +6,14 @@ import java.util.List;
 
 public class Playlist {
 
-    private String name;
+    private String title;
     private Data dataCreation; // data creazione
     private String genre; // genere musicale della playlist
     private User user; // utente che crea la playlist
     private List<Song>songList; // lista canzoni
 
-    public Playlist(String name, String genre, Data dataCreation, User user){
-        this.name = name;
+    public Playlist(String title, String genre, Data dataCreation, User user){
+        this.title = title;
         this.genre = genre;
         this.dataCreation = dataCreation;
         this.user = user;

@@ -5,7 +5,8 @@ import javax.xml.crypto.Data;
 public class Song {
     private String title;
     private String artist;
-    private float time;
+    private String genre;
+    private int time;
     private Data dataProduction;
 
     public Song(String title, String artist,float time, Data dataProduction){
