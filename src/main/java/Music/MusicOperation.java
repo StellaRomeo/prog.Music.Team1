@@ -11,6 +11,7 @@ public interface MusicOperation {
     public void addToPlaylist();
     public void removeToPlaylist();
     public  void createPlaylist();
+    public void like();
 
 
 
