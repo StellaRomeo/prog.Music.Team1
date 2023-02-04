@@ -1,6 +1,5 @@
 package Music;
 
-
 import Account.Artist;
 import Account.User;
 

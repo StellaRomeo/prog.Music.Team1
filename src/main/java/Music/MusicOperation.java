@@ -2,17 +2,17 @@ package Music;
 
 public interface MusicOperation {
 
-    public void play();
-    public void stop();
-    public void skip();
-    public void pause();
-    public void repeat();
-    public void shuffle();
-    public void add();
-    public void remove();
-    public void like();
-    public void dislike();
-    public void search();
+     void play();
+     void stop();
+     void skip();
+     void pause();
+     void repeat();
+     void shuffle();
+     void add();
+     void remove();
+     void like();
+     void dislike();
+     void search();
 
 
 
