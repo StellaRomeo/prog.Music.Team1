@@ -5,8 +5,10 @@ public class Admin extends Account {
     private User user;
 
 
-    public Admin(String username, String password, String email) {
-        super(username, password, email);
+    public Admin(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
+                 boolean isPausing,boolean isRepeating) {
+        super(username, password, email, isPlaying,isStopping,isSkipping,isPausing,isRepeating );
+
     }
 
     public void setUserName(String username){

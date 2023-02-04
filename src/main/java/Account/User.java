@@ -17,8 +17,10 @@ public class User extends Account {
     private String city;
     private String country;
 
-    public User(String username, String password, String email) {
-        super(username, password, email);
+
+    public User(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
+                boolean isPausing,boolean isRepeating ) {
+        super(username, password, email, isPlaying, isStopping,isSkipping, isPausing, isRepeating);
         this.setName(name);
         this.setSurname(surname);
         this.setDataBorn(dataBorn);
@@ -27,6 +29,7 @@ public class User extends Account {
         this.setAddress(address);
         this.setCity(city);
         this.setCountry(country);
+
     }
 
 

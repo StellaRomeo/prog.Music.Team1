@@ -12,14 +12,27 @@ public abstract class Account implements AccountOperation {
     protected String username;
     protected String password;
     protected String email;
-    private List<Playlist>playlists;
 
-    public Account(String username, String password, String email){
+    private List<Playlist>playlists;
+    public boolean isPlaying;
+    public boolean isStopping;
+    public boolean isSkipping;
+    public boolean isPausing;
+    public boolean isRepeating;
+
+
+    public Account(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
+                   boolean isPausing,boolean isRepeating){
         this.username = username;
         this.password = password;
         this.email = email;
         this.id = UUID.randomUUID().toString();
         this.playlists = new ArrayList<>();
+        this.isPlaying = true;
+        this.isStopping = true;
+        this.isSkipping = true;
+        this.isPausing = true;
+        this.isRepeating = true;
     }
 
     public String getId() {
