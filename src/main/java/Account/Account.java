@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public abstract class Account {
+public abstract class Account implements AccountOperation {
 
     private String id;
     protected String username;
@@ -46,12 +46,7 @@ public abstract class Account {
         return playlists;
     }
 
-    public void addPlaylist(Playlist playlist){
-        playlists.add(playlist);
-    }
-    public  void removePlaylist(Playlist playlist){
-        playlists.remove(playlist);
-    }
+
 
 
 
