@@ -32,7 +32,7 @@ public class Song extends MusicDetail implements MusicOperation {
     @Override
     public void stop() {
         while (true){
-            if (user.isStopping == true && admin.isStopping == true){
+            if (user.isStopping == true || admin.isStopping == true){
                 System.out.printf("The song %s of the artist %s is playing ", getTitle(),getArtist());
             }
         }
