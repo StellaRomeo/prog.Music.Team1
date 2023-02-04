@@ -14,7 +14,8 @@ public class Playlist extends MusicDetail {
     private List<Song>songList;
 
 
-    public Playlist(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment, User user) {
+    public Playlist(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment,
+                    User user) {
         super(title, artist, genreMusical, duration, dataCreation, assessment);
         this.user = user;
         this.songList = new ArrayList<>();

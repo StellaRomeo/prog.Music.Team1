@@ -10,8 +10,8 @@ public class GenreMusical {
     private String[] name;
     private List<Song>songs;
 
-    public GenreMusical(String[] name, List<Song>songs){
+    public GenreMusical(String[] name){
         this.name = name;
-        this.songs = songs;
+        this.songs = new ArrayList<>();
     }
 }
