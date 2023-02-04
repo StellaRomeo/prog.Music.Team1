@@ -99,4 +99,18 @@ public class User extends Account {
         return super.getPlaylists();
     }
 
+    @Override
+    public void createAccount() {
+        super.createAccount();
+    }
+
+    @Override
+    public void deleteAccount() {
+        super.deleteAccount();
+    }
+
+    @Override
+    public void updateAccount() {
+        super.updateAccount();
+    }
 }

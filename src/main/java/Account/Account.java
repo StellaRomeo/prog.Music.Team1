@@ -43,11 +43,22 @@ public abstract class Account implements AccountOperation {
 
 
     public List<Playlist> getPlaylists() {
+
         return playlists;
     }
 
+    @Override
+    public void createAccount() {
 
+    }
 
+    @Override
+    public void deleteAccount() {
 
+    }
 
+    @Override
+    public void updateAccount() {
+
+    }
 }

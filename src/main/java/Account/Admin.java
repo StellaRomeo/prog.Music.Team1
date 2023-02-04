@@ -18,4 +18,19 @@ public class Admin extends Account {
     public void setEmail(String email){
         this.email = email;
     }
+
+    @Override
+    public void createAccount() {
+        super.createAccount();
+    }
+
+    @Override
+    public void deleteAccount() {
+        super.deleteAccount();
+    }
+
+    @Override
+    public void updateAccount() {
+        super.updateAccount();
+    }
 }
