@@ -24,8 +24,9 @@ public class Song extends MusicDetail implements MusicOperation {
         while (true){
             if (user.isPlaying == true || admin.isPlaying==true){
                 System.out.printf("The song %s of the artist %s is playing ", getTitle(),getArtist());
-                break;
-            }
+            } else {
+            System.out.printf("The song %s of the artist %s is not playing ", getTitle(),getArtist());
+        }
         }
     }
 
@@ -36,16 +37,16 @@ public class Song extends MusicDetail implements MusicOperation {
             if (user.isStopping == true || admin.isStopping == true){
                 System.out.printf("The song %s of the artist %s is playing ", getTitle(),getArtist());
             } else {
-            System.out.printf("The song %s of the artist %s is not playing ", getTitle(),getArtist());
-        }
-        }
+                System.out.printf("The song %s of the artist %s is not stopping ", getTitle(),getArtist());
+            }
     }
     @Override
     public void skip() {
         while (true){
             if (user.isSkipping == true || admin.isSkipping == true){
                 System.out.printf("Playing the next song %s of the artist %s ",getTitle(),getArtist() );
-                break;
+            } else {
+                System.out.printf("The next song isn't playing ", getTitle(),getArtist());
             }
         }
 
