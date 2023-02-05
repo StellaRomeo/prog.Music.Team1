@@ -18,7 +18,8 @@ public class ArtistUser extends User{
     public void publishSong(Song song){
         if (artistUser.isAdding && artistUser.hasRightsToAddSong){
             System.out.println("Publish the song");
-            // inserisci la canzone qui
+            // Salvare la canzone in un database o file system()
+            System.out.println("Song released successfully!");
         }else{
             System.out.println("You don't have the rights to publish the songs");
         }
