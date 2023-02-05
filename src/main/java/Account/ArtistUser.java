@@ -2,6 +2,9 @@ package Account;
 
 import Music.Song;
 
+/**
+ * the ArtistUser class which extends the User class and represents the user who has the ability to publish their music
+ */
 public class ArtistUser extends User{
 
     private Artist artistUser;
