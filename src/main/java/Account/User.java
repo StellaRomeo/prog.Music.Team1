@@ -2,7 +2,8 @@ package Account;
 
 import Music.Playlist;
 
-import javax.xml.crypto.Data;
+
+import java.util.Date;
 import java.util.List;
 
 
@@ -10,7 +11,7 @@ public class User extends Account {
 
     private String name;
     private String surname;
-    private Data dataBorn;
+    private Date dataBorn;
     private String gender;
     private String nationality;
     private String address;
@@ -20,7 +21,7 @@ public class User extends Account {
 
     public User(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
                 boolean isPausing,boolean isRepeating ) {
-        super(username, password, email, isPlaying, isStopping,isSkipping, isPausing, isRepeating);
+        super(username, password, email);
         this.setName(name);
         this.setSurname(surname);
         this.setDataBorn(dataBorn);
@@ -49,11 +50,11 @@ public class User extends Account {
         this.surname = surname;
     }
 
-    public Data getDataBorn() {
+    public Date getDataBorn() {
         return dataBorn;
     }
 
-    public void setDataBorn(Data dataBorn) {
+    public void setDataBorn(Date dataBorn) {
         this.dataBorn = dataBorn;
     }
 

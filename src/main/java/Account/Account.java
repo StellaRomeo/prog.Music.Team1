@@ -26,10 +26,10 @@ public abstract class Account implements AccountOperation,AccountObject {
     public boolean isLiking;
     public boolean isDisliking;
     public boolean isSearching;
+    public boolean hasRightsToAddSong;
+    public boolean hasRightsToAddPlaylist;
 
-
-    public Account(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
-                   boolean isPausing,boolean isRepeating){
+    public Account(String username, String password, String email){
         this.username = username;
         this.password = password;
         this.email = email;
@@ -40,6 +40,8 @@ public abstract class Account implements AccountOperation,AccountObject {
         this.isSkipping = true;
         this.isPausing = true;
         this.isRepeating = true;
+        this.hasRightsToAddSong = true;
+        this.hasRightsToAddPlaylist = true;
     }
 
     @Override

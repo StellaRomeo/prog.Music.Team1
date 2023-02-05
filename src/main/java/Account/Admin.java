@@ -7,7 +7,7 @@ public class Admin extends Account {
 
     public Admin(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
                  boolean isPausing,boolean isRepeating) {
-        super(username, password, email, isPlaying,isStopping,isSkipping,isPausing,isRepeating );
+        super(username, password, email);
 
     }
 

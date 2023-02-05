@@ -5,14 +5,15 @@ import Account.Admin;
 import Account.Artist;
 import Account.User;
 
-import javax.xml.crypto.Data;
+import java.util.Date;
+
 
 public class Song extends MusicDetail implements MusicOperation {
 
     private User user;
     private Admin admin;
 
-    public Song(String title, Artist artist, GenreMusical genreMusical, int duration, Data dataCreation, int assessment,User user,Admin admin) {
+    public Song(String title, Artist artist, GenreMusical genreMusical, int duration, Date dataCreation, int assessment, User user, Admin admin) {
         super(title, artist, genreMusical, duration, dataCreation, assessment);
         this.user = user;
         this.admin = admin;
@@ -40,15 +41,13 @@ public class Song extends MusicDetail implements MusicOperation {
                 System.out.printf("The song %s of the artist %s is not stopping ", getTitle(),getArtist());
             }
     }
+
+
+
+    }
+
     @Override
     public void skip() {
-        while (true){
-            if (user.isSkipping == true || admin.isSkipping == true){
-                System.out.printf("Playing the next song %s of the artist %s ",getTitle(),getArtist() );
-            } else {
-                System.out.printf("The next song isn't playing ", getTitle(),getArtist());
-            }
-        }
 
     }
 
