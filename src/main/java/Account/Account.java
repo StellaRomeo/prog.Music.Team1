@@ -19,6 +19,13 @@ public abstract class Account implements AccountOperation,AccountObject {
     public boolean isSkipping;
     public boolean isPausing;
     public boolean isRepeating;
+    public boolean isShuffling;
+    public boolean isAdding;
+    public boolean isRemoving;
+    public boolean isShuffle;
+    public boolean isLiking;
+    public boolean isDisliking;
+    public boolean isSearching;
 
 
     public Account(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,
