@@ -9,15 +9,13 @@ import java.util.List;
 
 public class Playlist extends MusicDetail {
 
-    private User user;
-    private Admin admin;
+    private User admin;
     protected List<Song>songList;
 
 
     public Playlist(String title, Artist artist, GenreMusical genreMusical, int duration, Date dataCreation, int assessment,
-                    User user,Admin admin) {
+                    User admin) {
         super(title, artist, genreMusical, duration, dataCreation, assessment);
-        this.user = user;
         this.admin = admin;
         this.songList = new ArrayList<>();
     }
