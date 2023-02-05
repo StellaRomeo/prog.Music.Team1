@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public abstract class Account implements AccountOperation {
+public abstract class Account implements AccountOperation,AccountObject {
 
     private String id;
     protected String username;
@@ -35,25 +35,25 @@ public abstract class Account implements AccountOperation {
         this.isRepeating = true;
     }
 
+    @Override
     public String getId() {
         return id;
     }
 
-
+    @Override
     public String getUsername() {
         return username;
     }
 
-
+    @Override
     public String getPassword() {
         return password;
     }
 
-
+    @Override
     public String getEmail() {
         return email;
     }
-
 
     public List<Playlist> getPlaylists() {
 
