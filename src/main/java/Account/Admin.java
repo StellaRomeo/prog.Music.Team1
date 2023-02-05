@@ -41,4 +41,11 @@ public class Admin extends Account {
     public void updateAccount() {
         super.updateAccount();
     }
+
+    public void banUser(User user){
+        //inserire codice
+    }
+    public void unbanUser(User user){
+        //inserire codice
+    }
 }
