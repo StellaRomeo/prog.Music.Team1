@@ -2,7 +2,7 @@ package Account;
 
 public class Admin extends Account {
     public boolean isAdmin;
-    public boolean isModerator;
+    public boolean isModerator; // da vedere
 
 
     public Admin(String username, String password, String email, boolean isPlaying,boolean isStopping,boolean isSkipping,

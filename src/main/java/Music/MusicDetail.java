@@ -1,8 +1,6 @@
 package Music;
 
 import Account.Artist;
-
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public abstract class MusicDetail {    //song-playlist-album
@@ -10,12 +8,12 @@ public abstract class MusicDetail {    //song-playlist-album
     private String title;
     private Artist artist;
     private GenreMusical genreMusical;
-    private int duration;
+    private double duration;
     private Date dataCreation;
     private int assessment; // valutazione 1-5
 
 
-    public MusicDetail(String title, Artist artist, GenreMusical genreMusical, int duration, Date dataCreation, int assessment) {
+    public MusicDetail(String title, Artist artist, GenreMusical genreMusical, double duration, Date dataCreation, int assessment) {
         this.setTitle(title);
         this.setArtist(artist);
         this.setGenreMusical(genreMusical);
@@ -49,11 +47,11 @@ public abstract class MusicDetail {    //song-playlist-album
         this.genreMusical = genreMusical;
     }
 
-    public int getDuration() {
+    public double getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(double duration) {
         this.duration = duration;
     }
 

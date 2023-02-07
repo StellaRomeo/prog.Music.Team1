@@ -4,13 +4,12 @@ package Music;
 import Account.Admin;
 import Account.Artist;
 import Account.User;
-
 import java.util.Date;
 
 
 public class Song extends MusicDetail implements MusicOperation {
 
-    private User user;
+    private User user; //Vedi Carlo
     private Admin admin;
 
     public Song(String title, Artist artist, GenreMusical genreMusical, int duration, Date dataCreation, int assessment, User user, Admin admin) {
@@ -23,7 +22,7 @@ public class Song extends MusicDetail implements MusicOperation {
     @Override
     public void play() {
         while (true){
-            if (user.isPlaying == true || admin.isPlaying==true){
+            if (user.isPlaying == true || admin.isPlaying == true){
                 System.out.printf("The song %s of the artist %s is playing ", getTitle(),getArtist());
             } else {
             System.out.printf("The song %s of the artist %s is not playing ", getTitle(),getArtist());
