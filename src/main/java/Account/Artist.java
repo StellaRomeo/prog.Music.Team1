@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class Artist extends Account{
+public class Artist{
 
     private String id;
     private String nameArtist;
@@ -22,9 +22,8 @@ public class Artist extends Account{
     private List<Song>tracks;
 
 
-    public Artist(String username, String password, String email, String nameArtist,GenreMusical genre,Data carrierStartYear,
+    public Artist(String nameArtist,GenreMusical genre,Data carrierStartYear,
                   int numTracks, int numAlbum, String nationality) {
-        super(username, password, email);
         this.nameArtist = nameArtist;
         this.genre = genre;
         this.carrierStartYear = carrierStartYear;
