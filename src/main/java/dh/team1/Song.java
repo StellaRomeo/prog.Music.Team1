@@ -1,10 +1,10 @@
 package dh.team1;
 
 public class Song  {
-
+    //private Integer id;
     private String title;
     private Song GenreTypeEnum;
-    private Integer id;
+
     private String executor;
     private String writer;
     private String productor;
@@ -16,19 +16,19 @@ public class Song  {
         this.like = like;
     }
 
-    public Song(String title, Song genreTypeEnum,
-                Integer id, String executor,
+    public Song(String title, Song genreTypeEnum, String executor,
                 String writer, String productor,
                 String source, String error) {
         this.title = title;
         GenreTypeEnum = genreTypeEnum;
-        this.id = id;
         this.executor = executor;
         this.writer = writer;
         this.productor = productor;
         this.source = source;
         this.error = error;
     }
+
+
 
     public boolean isLike() {
         return like;
@@ -54,13 +54,7 @@ public class Song  {
         GenreTypeEnum = genreTypeEnum;
     }
 
-    public Integer getId() {
-        return id;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getExecutor() {
         return executor;

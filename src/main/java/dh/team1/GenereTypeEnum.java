@@ -3,12 +3,16 @@ package dh.team1;
 public enum GenereTypeEnum {
 
     Pop,
-    Rok,
+    Rock,
     Jazz,
     Soul,
-    Musica_Clasica,
+    Musica_Classica,
     Hip_hop,
-    Latina
+    Latina,
+    Reggae,
+    Rythm_and_Blues,
+    Heavy_Metal,
+
 
 
 }

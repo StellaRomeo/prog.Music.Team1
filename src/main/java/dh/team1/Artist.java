@@ -4,24 +4,71 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Artist extends Person{
+   // private int Id;
+
+    private String musicGenre;
+    private String password;
 
 
-    public int getId() {
-        return Id;
-    }
+    /**
+     * Artist tracklist
+     */
+    private List<Song> braniInterpretatiList = new ArrayList<>();
 
-    public void setId(int id) {
-        Id = id;
-    }
+    /**
+     *
+     * @param name of artist
+     * @param surname of artist
+     * @param nationality of artist
+     * @param birthDay of artist
+     * @param mail of artist
+     * @param musicGenre of artist
+     * @param password of artist
+     * @param braniInterpretatiList of artist
+     */
 
-    private int Id;
 
-
-    public Artist(int Id,String name, String surname, String nationality, String birthDay, String mail) {
+    public Artist(String name, String surname, String nationality, String birthDay, String mail,String musicGenre,String password, List<Song>braniInterpretatiList) {
         super(name, surname, nationality, birthDay, mail);
-        this.Id=Id;
+        this.musicGenre=musicGenre;
+        this.password=password;
+        this.braniInterpretatiList=braniInterpretatiList;
+    }
+
+    /**
+     * method to add songs
+     */
+
+     public void addSong(String title,Song GenreTypeEnum,String executor,String writer,String productor,String source,String error){
+
+        braniInterpretatiList.add( new Song(title,GenreTypeEnum,executor,writer,productor,source,error));
+     }
+
+
+
+    public String getMusicGenre() {
+        return musicGenre;
+    }
+
+    public void setMusicGenre(String musicGenre) {
+        this.musicGenre = musicGenre;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public List<Song> getBraniInterpretatiList() {
+        return braniInterpretatiList;
+    }
+
+    public void setBraniInterpretatiList(List<Song> braniInterpretatiList) {
+        this.braniInterpretatiList = braniInterpretatiList;
     }
 
 
-    List<String> artistList=new ArrayList<String>();
 }
