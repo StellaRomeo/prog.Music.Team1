@@ -1,5 +1,8 @@
 package dh.team1.Account;
 
+import dh.content.Album;
+import dh.content.Song;
+
 import java.util.List;
 
 public class Artist extends User{
