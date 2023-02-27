@@ -1,7 +1,7 @@
-package dh.team2;
+package home;
 
-import dh.team1.Album;
-import dh.team1.Artist;
+import team1.Album;
+import team1.Artist;
 
 import java.util.List;
 

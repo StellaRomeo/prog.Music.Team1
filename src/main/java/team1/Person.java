@@ -1,4 +1,4 @@
-package dh.team1;
+package team1;
 
 public abstract class Person {
      private String name;

@@ -1,4 +1,4 @@
-package dh.team1;
+package team1;
 
 public enum GenereTypeEnum {
 
