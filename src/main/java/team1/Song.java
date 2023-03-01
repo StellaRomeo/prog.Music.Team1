@@ -1,5 +1,10 @@
     package team1;
 
+    import java.util.Collection;
+
+    /**
+     * @author Maria Coman
+     */
     public class Song  {
         //private Integer id;
         private String title;
@@ -104,7 +109,10 @@
         this.error = error;
     }
 
-
+        /**
+         *
+         * @return the song details
+         */
         public String songDetails() {
             return "Song{" +
                     "title='" + title + '\'' +
@@ -116,8 +124,6 @@
                     ", dateOfCreation='" + dateOfCreation + '\'' +
                     '}';
         }
-
-
 
 
     }

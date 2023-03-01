@@ -1,7 +1,10 @@
 package team1;
-
+/**
+ * @author Maria Coman
+ */
 public abstract class Person {
-     private String name;
+
+    private String name;
      private String surname;
     private String nationality;
      private  String birthDay ;

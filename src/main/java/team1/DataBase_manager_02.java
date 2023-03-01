@@ -5,11 +5,13 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class DataBase_manager_02 {
-
+    /**
+     * @author Maria Coman
+     */
 public static void DB_Manager(String[]args){
     String DB_URL="jdbc:mysql://localhost:3306/prog_music";
     String  user="root";
-    String  password="Mara32?%" +"";
+    String  password="" +"";
 
 
 

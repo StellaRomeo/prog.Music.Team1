@@ -3,7 +3,9 @@ package team1;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * @author Maria Coman
+ */
 public class Artist extends Person{
 
     private GenereTypeEnum musicGenre;

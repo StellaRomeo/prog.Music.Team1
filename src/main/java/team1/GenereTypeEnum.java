@@ -1,5 +1,7 @@
 package team1;
-
+/**
+ * @author Maria Coman
+ */
 public enum GenereTypeEnum {
 
     Pop,

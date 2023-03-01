@@ -2,7 +2,9 @@
 
     import java.util.ArrayList;
     import java.util.List;
-
+    /**
+     * @author Maria Coman
+     */
     public class dh_music {
         private List<Artist> artistList=new ArrayList<>();
 
