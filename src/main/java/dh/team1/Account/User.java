@@ -9,6 +9,8 @@ public class User extends Account{
     Date dateOfBirth;
     String gender;
 
+    String nationality;
+
 
     public String setName(){
       return this.name=  scanner.nextLine();
