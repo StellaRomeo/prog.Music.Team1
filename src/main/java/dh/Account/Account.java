@@ -1,24 +1,32 @@
-package dh.team1.Account;
+package dh.Account;
+
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
-
-public abstract  class Account {
+@Getter
+@Setter
+public abstract class Account {
 
     String id;
     String username;
     String password;
     String email;
-    Date creationDate;
-    boolean loggedIn;
-    String proPic;  //Immagine di profilo
+    String creationDate;
+
+    boolean loggedIn; //verificare se utile o meno
     boolean verificateEmail;
     String codeVerificate;
 
     Scanner scanner= new Scanner(System.in);
 
-
+    public Account(String username, String email,String password){
+        this.username=username;
+        this.email=email;
+        this.password=password;
+    }
     public String setUsername(){
       return  this.username= scanner.nextLine();
     }
@@ -40,12 +48,10 @@ public abstract  class Account {
 
         this.email= scanner.nextLine();
         this.verificateEmail= false;
-
-
         this.codeVerificate= code;
         //send email with code.
-
     }
+
 
     public void verificateEmail(){
         String code= scanner.nextLine();
@@ -56,11 +62,6 @@ public abstract  class Account {
             System.out.println("The code is not correct");
         }
 
-    }
-
-    // TODO: 14/02/2023
-    public String setProPic(){
-        return this.proPic= scanner.nextLine();
     }
     
 

@@ -1,4 +1,4 @@
-package dh.team1.Account;
+package dh.Account;
 
 import dh.content.Album;
 import dh.content.Song;
@@ -14,7 +14,9 @@ public class Artist extends User{
     int follower;
     List<User> usersFollowers;
 
-
+    public Artist(String username, String email, String password, String name, String surname, String dateOfBirth, String gender, String nationality, int isAdmin) {
+        super(username, email, password, name, surname, dateOfBirth, gender, nationality, isAdmin);
+    }
 
 
     public String setBio(){

@@ -1,5 +1,7 @@
 package dh.content;
 
+import dh.Account.User;
+
 import java.util.Date;
 import java.util.List;
 

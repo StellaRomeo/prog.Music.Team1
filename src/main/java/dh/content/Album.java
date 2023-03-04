@@ -1,6 +1,8 @@
 package dh.content;
 
 
+import dh.Account.Artist;
+
 import java.util.Date;
 import java.util.List;
 

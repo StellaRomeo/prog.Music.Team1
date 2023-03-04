@@ -1,4 +1,6 @@
 package dh.content;
+import dh.Account.Artist;
+
 import java.util.Date;
 
 public class Song implements Content{
